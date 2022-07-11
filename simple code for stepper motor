@@ -1,0 +1,43 @@
+int in1pin= 2;
+int in2pin= 3;
+int in3pin= 4;
+int in4pin= 5;
+
+void setup() {
+pinMode(in1pin, OUTPUT);
+pinMode(in2pin, OUTPUT);
+pinMode(in3pin, OUTPUT);
+pinMode(in4pin, OUTPUT);
+}
+
+void loop(){
+// 4 step Mode every step 90 degree
+digitalwrite(in1pin, HIGH);
+digitalwrite(in2pin, LOW);
+digitalwrite(in3pin, LOW);
+digitalwrite(in4pin, LOW);
+delay(5);
+
+//second step 
+digitalwrite(in1pin, LOW);
+digitalwrite(in2pin, HIGH);
+digitalwrite(in3pin, LOW);
+digitalwrite(in4pin, LOW);
+delay(5);
+
+//third 
+digitalwrite(in1pin, LOW);
+digitalwrite(in2pin, LOW);
+digitalwrite(in3pin, HIGH);
+digitalwrite(in4pin, LOW);
+delay(5);
+
+//fourth
+digitalwrite(in1pin, LOW);
+digitalwrite(in2pin, LOW);
+digitalwrite(in3pin, LOW);
+digitalwrite(in4pin, HIGH);
+delay(5);
+
+
+
